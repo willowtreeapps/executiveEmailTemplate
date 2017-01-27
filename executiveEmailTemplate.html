@@ -1,5 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -175,7 +173,23 @@
             color: #54b4cf;
         }
 
-        @media only screen and (max-width: 550px), screen and (max-device-width: 550px) {
+        ul {
+            margin: 0 !important;
+            padding: 0 20px;
+            -webkit-margin-before: 0 !important;
+            -webkit-margin-after: 0 !important;
+        }
+
+        @media only screen and (max-device-width: 550px) {
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .escalations-text {
+                font-size: 18px !important;
+            }
+
             body[yahoo] .hide {
                 display: none !important;
             }
@@ -253,26 +267,32 @@
                              height="45" alt="Status" style="height: auto;">
                     </td>
                 </tr>
-                <tr>
-                    <td bgcolor="f4f4f4">
-                        <table class="key-takeaways" bgcolor="#529da8" align="center"
-                               style="width: 100%;font-family: Arial;font-size: 15px;font-weight: 500;font-style: normal;font-stretch: normal;line-height: 2.87;letter-spacing: 2.3px;text-align: center;color: #ffffff;">
-                            <tr>
-                                <td>
-                                    KEY TAKEAWAYS
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
+                <!--                <tr>
+                                    <td bgcolor="f4f4f4">
+                                        <table class="key-takeaways" bgcolor="#529da8" align="center"
+                                               style="width: 100%;font-family: Arial;font-size: 15px;font-weight: 500;font-style: normal;font-stretch: normal;line-height: 2.87;letter-spacing: 2.3px;text-align: center;color: #ffffff;">
+                                            <tr>
+                                                <td>
+                                                    KEY TAKEAWAYS
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>-->
                 <tr class="takeaways" bgcolor="#124a55"
                     style="font-family: Arial;font-size: 16px;font-weight: normal;font-style: normal;font-stretch: normal;line-height: 1.44;letter-spacing: normal;color: #ffffff;">
                     <td class="innerpadding borderbottom"
-                        style="padding: 30px 30px 30px 30px;border-bottom: 1px solid #f2eeed;">
+                        style="padding: 0px 30px 30px 30px;border-bottom: 1px solid #f2eeed;">
                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
                             <tr>
+                                <p class="escalations-copy"
+                                   style="font-family: Arial;font-size: 25px;font-weight: 500;font-style: normal;font-stretch: normal;line-height: 1.72;letter-spacing: normal;color: #ffffff;">
+                                    Key Takeaways
+                                </p>
+                            </tr>
+                            <tr>
                                 <div class="escalations-text"
-                                     style="font-family: Arial;font-size: 16px;font-weight: normal;font-style: normal;font-stretch: normal;line-height: 1.25;letter-spacing: normal;padding: 10px;color: #ffffff;">
+                                     style="font-family: Arial;font-size: 16px;font-weight: normal;font-style: normal;font-stretch: normal;line-height: 1.25;letter-spacing: normal;padding: 0px 15px;color: #ffffff;">
                                     <ul style="color: #ffffff;padding:0 0 0 0">
                                         <li>This is the first takeaway</li>
                                         <br>
@@ -287,19 +307,17 @@
                                 <hr style="border:1px solid #59767c" width="100%">
 
                             </tr>
-                            <tr class="escalations-copy"
-                                style="font-family: Arial;font-size: 25px;font-weight: 500;font-style: normal;font-stretch: normal;line-height: 1.72;letter-spacing: normal;color: #ffffff;">
+                            <tr>
                                 <p class="escalations-copy"
                                    style="font-family: Arial;font-size: 25px;font-weight: 500;font-style: normal;font-stretch: normal;line-height: 1.72;letter-spacing: normal;color: #ffffff;">
                                     Blockers/Escalations
                                 </p>
                             </tr>
-                            <tr class="escalations-text"
-                                style="font-family: Arial;font-size: 18px;font-weight: 600;font-style: normal;font-stretch: normal;line-height: 1.25;letter-spacing: normal;padding: 0;color: #ffffff;">
+                            <tr>
                                 <div class="escalations-text"
-                                     style="font-family: Arial;font-size: 18px;font-weight: 600;font-style: normal;font-stretch: normal;line-height: 1.25;letter-spacing: normal;padding: 0;color: #ffffff;">
-                                    We are blocked on this thing and it will impact the timeline so please do X Y Z to
-                                    unblock the team
+                                     style="font-family: Arial;font-size: 16px;font-weight: normal;font-style: normal;font-stretch: normal;line-height: 1.25;letter-spacing: normal;padding: 0;color: #ffffff;">
+                                    <span style="background-color: #35646e; padding: 5px 0px 5px">We are blocked on this thing and it will impact the timeline so please do X Y Z to
+                                        unblock the team</span>
                                 </div>
                             </tr>
                         </table>
@@ -364,18 +382,26 @@
                                 <td>
                                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                         <tr>
+                                            <td>
+                                                <span style="padding:4px 7px 4px 7px;background-color: #529da8;color: #ffffff; font-size: 14px; font-weight: bold; font-family: Arial">TOTAL: 10</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
                                             <td class="project-burndown-copy"
                                                 style="font-family: FreightDispPro-Regular;font-size: 25px;font-weight: bold;font-style: normal;font-stretch: normal;line-height: 1.72;letter-spacing: normal;color: #4a4a4a;">
-                                                Icebox:
+                                                Icebox
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="project-burndown-text"
                                                 style="font-family: Arial;font-size: 16px;font-weight: normal;font-style: normal;font-stretch: normal;line-height: 1.25;letter-spacing: normal;color: #4a4a4a;">
                                                 <br>
-                                                <li>No additions this past week</li>
-                                                <br>
-                                                <li><a href="google.com" style="color: #54b4cf;">Link</a> to Icebox</li>
+                                                <ul>
+                                                    <li>No additions this past week</li>
+                                                    <br>
+                                                    <li><a href="google.com" style="color: #54b4cf;">Link</a> to Icebox
+                                                    </li>
+                                                </ul>
                                             </td>
                                         </tr>
                                     </table>
@@ -421,9 +447,13 @@
                                             <td class="project-burndown-text"
                                                 style="font-family: Arial;font-size: 16px;font-weight: normal;font-style: normal;font-stretch: normal;line-height: 1.25;letter-spacing: normal;color: #4a4a4a;">
                                                 <br>
-                                                <li>No new security risks identified this past week</li>
-                                                <br>
-                                                <li><a href="google.com" style="color: #54b4cf;">Link</a> to known Security Risks</li>
+                                                <ul>
+                                                    <li>No new security risks identified this past week</li>
+                                                    <br>
+                                                    <li><a href="google.com" style="color: #54b4cf;">Link</a> to known
+                                                        Security Risks
+                                                    </li>
+                                                </ul>
                                             </td>
                                         </tr>
                                     </table>
@@ -469,7 +499,11 @@
                                             <td class="project-burndown-text"
                                                 style="font-family: Arial;font-size: 16px;font-weight: normal;font-style: normal;font-stretch: normal;line-height: 1.25;letter-spacing: normal;color: #4a4a4a;">
                                                 <br>
-                                                <li><a href="google.com" style="color: #54b4cf;">Link</a> to Project Plan</li>
+                                                <ul>
+                                                    <li><a href="google.com" style="color: #54b4cf;">Link</a> to Project
+                                                        Plan and pertinent information
+                                                    </li>
+                                                </ul>
                                             </td>
                                         </tr>
                                     </table>
@@ -515,9 +549,11 @@
                                             <td class="project-burndown-text"
                                                 style="font-family: Arial;font-size: 16px;font-weight: normal;font-style: normal;font-stretch: normal;line-height: 1.25;letter-spacing: normal;color: #4a4a4a;">
                                                 <br>
-                                                <li>Feb 8: Freeze on feature development</li>
-                                                <br>
-                                                <li>Mar 6: V1 release</li>
+                                                <ul>
+                                                    <li>Feb 8: Freeze on feature development</li>
+                                                    <br>
+                                                    <li>Mar 6: V1 release</li>
+                                                </ul>
                                             </td>
                                         </tr>
                                     </table>
@@ -538,33 +574,12 @@
                                 <td align="center" class="footercopy"
                                     style="font-family: Arial;font-size: 16px;font-weight: 500;font-style: normal;font-stretch: normal;line-height: 1.12;letter-spacing: normal;text-align: center;color: #c1ccce;">
                                     <p>
-                                        Copyright &reg; 2017 WillowTree Inc.<br><br>
-                                        107 5th Street Southeast, Charlottesville, VA 22911
-                                    </p>
-                                    <p class="inbox-inbox-m_-6958536859301802227gmail-m_4112027851297612724smaller gmail_msg"
-                                       style="font-size: 11px; line-height: 24px; padding: 0px;">
-                                        <a href="http://willowtreeapps.com/apps/"
-                                           class="inbox-inbox-m_-6958536859301802227gmail-m_4112027851297612724link gmail_msg"
-                                           title="Our Work" style="color: #c1ccce;text-decoration: underline;">Our
-                                            Work</a>
-                                        <span class="inbox-inbox-Apple-converted-space">&nbsp;</span>&nbsp; |
-                                        &nbsp;<span class="inbox-inbox-Apple-converted-space">&nbsp;</span><a
-                                            href="http://willowtreeapps.com/company/"
-                                            class="inbox-inbox-m_-6958536859301802227gmail-m_4112027851297612724link gmail_msg"
-                                            title="About WillowTree" style="color: #c1ccce;text-decoration: underline;">About
-                                        WillowTree</a>
-                                        <span class="inbox-inbox-Apple-converted-space">&nbsp;</span>&nbsp; |
-                                        &nbsp;<span class="inbox-inbox-Apple-converted-space">&nbsp;</span><a
-                                            href="http://willowtreeapps.com/careers/"
-                                            class="inbox-inbox-m_-6958536859301802227gmail-m_4112027851297612724link gmail_msg"
-                                            title="Careers"
-                                            style="color: #c1ccce;text-decoration: underline;">Careers</a>
-                                        <span class="inbox-inbox-Apple-converted-space">&nbsp;</span>&nbsp; |
-                                        &nbsp;<span class="inbox-inbox-Apple-converted-space">&nbsp;</span><a
-                                            href="http://willowtreeapps.com/contact/"
-                                            class="inbox-inbox-m_-6958536859301802227gmail-m_4112027851297612724link gmail_msg"
-                                            title="Connect with Us" style="color: #c1ccce;text-decoration: underline;">Connect
-                                        with Us</a>
+                                        Copyright &reg; 2017 <a href="http://willowtreeapps.com/"
+                                                                class="inbox-inbox-m_-6958536859301802227gmail-m_4112027851297612724link gmail_msg"
+                                                                title="Our Work"
+                                                                style="color: #c1ccce;text-decoration: underline;">Willowtree
+                                        Inc.</a><br><br>
+                                        107 5th Street Southeast, Charlottesville, VA 22902
                                     </p>
                                 </td>
                             </tr>
